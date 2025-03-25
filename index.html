@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cosmosqa</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div><h1>cosmosqa</h1></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">main</a></li>
+                <li><a href="#shop">shop</a></li>
+                <li><a href="#about">about us</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <h2>Welcome to our men's clothing store!</h2>
+            <p>The best styles for your wardrobe</p>
+            <img src="https://i.postimg.cc/6qkgS20c/Whats-App-2025-03-22-16-40-01-cc7283b1.jpg" alt="" class="picture">
+        </div>
+    </section>
+
+    <section id="shop">
+        <div class="products">
+            <div class="product-card">
+                <img src="https://i.postimg.cc/0QspT3z9/p1.jpg" alt="shirt">
+                <h3>shirt</h3>
+                <p>Price: 5000 tg</p>
+                <label for="size1">Size:</label>
+                <select id="size1">
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <button onclick="addToCart('shirt', document.getElementById('size1').value)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://i.postimg.cc/0QPwWw4Q/p2.jpg" alt="shirt">
+                <h3>shirt</h3>
+                <p>Price: 5000 tg</p>
+                <label for="size2">Size:</label>
+                <select id="size2">
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <button onclick="addToCart('shirt', document.getElementById('size2').value)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="about">
+        <h2>about us</h2>
+        <p>We offer a stylish and high-quality men's shirt at affordable prices.</p>
+    </section>
+
+    <section id="contact">
+        <h2>contact</h2>
+        <p>Email: cosmosqa.qz@gmail.com</p>
+        <p>Phone: +7 778 431 3473</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Men's clothing store</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
